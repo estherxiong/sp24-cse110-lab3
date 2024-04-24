@@ -1,0 +1,166 @@
+/* Colors */
+/* Apply colors to your HTML elements */
+/* Red, green, blue, alpha values */
+/* Hex codes */
+/* Hue, saturation, lightness, alpha values */
+/* Color name */
+/* Wider-gamut color */
+/* Predefined color space, values for color space */
+/* Method to mix colors, values & percentages of color */
+/* Example of using a CSS variable with fallback */
+:root {
+    --main-color: #3366ff;
+}
+
+.fallback {
+    color: var(--main-color, blue); /* Use the variable with a fallback value of blue */
+}
+
+/* Background */
+/* Apply background styles to your elements */
+body {
+    color: rgb(128, 0, 0); /* Red color using rgb values */
+    background-color: rgba(0, 128, 0, 0.5); /* Semi-transparent green color using rgba values */
+}
+
+/* Units */
+/* Units of measurement for sizing and spacing your elements */
+/* Unique relative units */
+/* Unique absolute units */
+h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    color: hsl(120, 100%, 50%); /* Fully saturated green color using HSL values */
+    background-color: hsla(240, 100%, 50%, 0.7); /* Semi-transparent blue color using HSLA values */
+}
+
+/* Box Model */
+/* Configure the containers that hold your HTML content */
+/* Margin */
+/* Longhand syntax */
+/* Shorthand syntax */
+/* Auto margins */
+h2 {
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    color: rgba(255, 255, 0, 0.5) /* 50% transparency red color using sRGB color space */
+}
+
+/* Padding */
+/* Longhand syntax */
+/* Shorthand syntax */
+h3 {
+    padding: 20px;
+}
+
+/* Borders */
+/* Borders around HTML elements */
+/* Border style */
+/* Border color */
+/* Border width */
+/* Border radius */
+section {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+
+/* Text */
+/* Style your text */
+/* Color */
+/* Text decoration */
+/* Text alignment */
+p {
+    color: #333;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Display */
+/* Experiment with display values */
+/* None */
+/* Block */
+/* Inline-block */
+/* Inline */
+footer {
+    display: block;
+}
+
+/* Sizing */
+/* Set the height and width for an element */
+/* Height */
+/* Width */
+/* Max-width */
+/* Min-width */
+img {
+    height: 200px;
+    width: 200px;
+}
+
+/* Position */
+/* Element positioning on the page */
+/* Static */
+/* Relative */
+/* Fixed */
+/* Absolute */
+/* Sticky */
+header {
+    position: sticky;
+    top: 0;
+}
+
+/* Pseudo-class */
+/* Elements that exist in your document conditionally */
+/* :hover */
+/* :active */
+a:hover {
+    color: #ff6600;
+}
+
+/* Layouts */
+/* Flexbox */
+/* Allow your elements to lay themselves out automatically */
+/* Apply flex to the display property */
+/* Must use minimum three of the flexbox related attributes */
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Grid */
+/* Instantiate a grid for your layouts */
+/* Apply grid to the display property */
+/* Must use a minimum of three of the grid related attributes */
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+/* Responsiveness */
+/* Make your website friendly for multiple devices */
+/* At least one query based on the screen width */
+/* Media query */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Fonts */
+/* Pick varying font styles to make your text fun to read */
+/* Include and use a 3rd party font */
+/* You can load the font in either your HTML or your CSS */
+body {
+    font-family: 'Garamond', serif;
+}
